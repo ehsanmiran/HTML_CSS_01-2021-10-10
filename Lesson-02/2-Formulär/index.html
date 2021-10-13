@@ -23,37 +23,37 @@
 
 <div>
     <label för="firstName">First Name</label>
-    <input type="text" id="firstName" name="fName" value="">
+    <input type="text" id="firstName" name="fName" value=""  placeholder="Enter Name..." required>
 </div>
 
-
+<br>
 <div>
     <label for="email">Email: </label>
-    <input type="email" name="email" id="email">
+    <input type="email" name="email" id="email" required>
 </div>
 
-
+<br>
 <div>
     <label for="age">Age: </label>
-    <input type="number" name="age" min="1" max="99" id="age">
+    <input type="number" name="age" min="1" max="99" id="age" required>
 </div>
 
-
+<br>
 <div>
     <label for="password">Password: </label>
-    <input type="password" name="password" id="password">
+    <input type="password" name="password" id="password" required>
 </div>
 
-
+<br>
 <div>
     <label for="date">Date</label>
-    <input type="date" name="date" id="date">
+    <input type="date" name="date" id="date"required>
 </div>
 
-
+<br>
 <div>
     <label for="role">Role</label>
-        <select name="role" id="role">
+        <select name="role" id="role" required>
             <option value="" disabled selected></option>
             <option value="admin">Admin</option>
             <option value="user">User</option>
@@ -61,7 +61,7 @@
          </select>
 </div>
 
-
+<br>
 <div>
     <input type="radio" name="gender" id="male" value="male">
     <label for="male">Male</label>
@@ -70,10 +70,33 @@
     <label for="female">Female</label>
 </div>
 
+<br>
+<div>
+    <input type="checkbox" name="terms" id="terms" required>
+    <label for="terms">I have read and agree to the terms and conditions</label>
+</div>
+
+<br>
+<div>
+    <input type="checkbox" name="news" id="news" checked>
+    <label for="news">I I would like to subscirbe to the newsletter</label>
+</div>
 
 
 <br>
-<button type="submit">SEND</button>
+<div>
+    <label for="message">Message</label> <br>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message..."></textarea>
+</div>
+
+
+
+<br>
+<input type="submit" value="submit">
+
+<br>
+<button type="reset">RESET</button>
+<button>SEND</button>
 
 </form>
 
