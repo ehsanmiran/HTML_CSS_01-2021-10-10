@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär</title>
+</head>
+<body>
+    
+
+<!--
+    get - skickar ALL datan i URL (länk fält),
+    funkar när man söker nånting eller hämtar information.
+    Absolut INTE känslig information så som lösenord mm.
+-->
+
+<form method="get">
+<!--
+    post - skickar en DEL av datan i URL (länk fält), resten of information 
+    skickas till BODY delen av sidan (är krypterad i en liten packet).
+-->
+
+<div>
+    <label för="firstName">First Name</label>
+    <input type="text" id="firstName" name="fName" value="">
+</div>
+
+
+<div>
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email">
+</div>
+
+
+<div>
+    <label for="age">Age: </label>
+    <input type="number" name="age" min="1" max="99" id="age">
+</div>
+
+
+<div>
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password">
+</div>
+
+
+<div>
+    <label for="date">Date</label>
+    <input type="date" name="date" id="date">
+</div>
+
+
+<div>
+    <label for="role">Role</label>
+        <select name="role" id="role">
+            <option value="" disabled selected></option>
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+            <option value="guest">Guest</option>
+         </select>
+</div>
+
+
+<div>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label>
+    <br>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label>
+</div>
+
+
+
+<br>
+<button type="submit">SEND</button>
+
+</form>
+
+
+</body>
+</html>
