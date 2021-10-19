@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+  .card-1 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: #10657B;
+    color: #fff;
+    padding: 40px;
+  }
+
+  .card-2 {
+    width: 50%;
+    margin: 50px 0px 0px 0;
+    text-align: left;
+    background-color: #ffffff;
+    color: #222222;
+    padding: 8px;
+    }
+
+  .card-3 {
+    width: 100%;
+    margin: 50px 0px 0px 0;
+    background-color: #ffffff;
+    color: #222222;
+    padding: 8px;
+    }
+
+ 
+   input[type=text], select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+
+  .larger {
+    width: 25px;
+    height: 25px;
+    margin: 50px 8px 0px 8px;
+    }
+
+  
+  input[type=submit] {
+    width: 250px;
+    background-color: #10657B;
+    color: white;
+    font-size: 1rem;
+    margin: 50px 8px 0px 0;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #0e5263;
+  }
+  
