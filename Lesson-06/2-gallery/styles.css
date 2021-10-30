@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+    "navbar navbar"
+    "side   gallery";
+}
+
+
+#main-nav {
+    grid-area: navbar;
+    background-color: #663399;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.navbar-brand {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.navbar-nav li {
+    list-style: none;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    /* border: 1px solid #fff; */
+    padding: 1rem;
+    display: inline-block;
+}
+.nav-link:hover {
+    background-color: #00000048;
+}
+
+#side-menu {
+    grid-area: side;
+    background-color: #492a68;
+    padding: 1rem;
+}
+
+#side-menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem;
+}
+#side-menu a:hover {
+    background-color: #00000048;
+}
+
+#gallery {
+    grid-area: gallery;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+.img {
+    background-color: #929292;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
